@@ -28,7 +28,7 @@ public class MessageFormatter {
 		return String.format(
 				"Flippening Status: %.2f%% 🐬\n" + "%s\n" + "\n"
 						+ "ETH Price: $%.2f \n" + "ETH Market Cap: $%s",
-				ratio, getProgress(ratio), ethPrice,
+				ratio * 100, getProgress(ratio), ethPrice,
 				prettyPrintBigDecimal(ethMarketCap));
 	}
 
